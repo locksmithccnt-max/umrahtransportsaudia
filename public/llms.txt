@@ -1,0 +1,55 @@
+# Umrah Transport Saudia
+
+> Private taxi, SUV, van, and bus transport for Umrah and Hajj pilgrims across Makkah, Madinah, and Jeddah, Saudi Arabia.
+
+## Business
+
+- **Name:** Umrah Transport Saudia
+- **Type:** Private pilgrim transport company
+- **Location:** Al Hedaya Road, Makkah 24242, Saudi Arabia
+- **Phone / WhatsApp:** +966 56 913 8258
+- **Email:** info@umrahtransportsaudia.com
+- **Hours:** 24 hours, 7 days a week
+- **Website:** https://umrahtransportsaudia.com
+
+## Service Area
+
+Makkah (city transfers, Haram, Mina, Arafat, Muzdalifah), Jeddah (King Abdulaziz International Airport transfers), Madinah (Prophet's Mosque area), Taif.
+
+## Fleet & Pricing
+
+All fares are per vehicle (not per person), fixed, in Saudi Riyals (SAR).
+
+| Vehicle | Type | Seats | Starting Fare |
+|---|---|---|---|
+| Toyota Camry | Sedan | 4 | 200 SAR |
+| Hyundai Staria | MPV | 7 | 200 SAR |
+| GMC Yukon XL | SUV | 7 | 250 SAR |
+| Toyota Hiace | Van | 13 | 250 SAR |
+| King Long Bus | Coach | 50 | 300 SAR |
+
+## Booking
+
+Book via WhatsApp: https://wa.me/966569138258?text=Hello%2C%20I%20need%20transport%20for%20Umrah.
+
+Share pickup location, destination, date, time, and passenger count. Confirmation within minutes.
+
+## Key Routes
+
+- Jeddah Airport (JED) -> Makkah (most popular)
+- Makkah city transfers (Haram, hotels, Mina, Arafat, Muzdalifah)
+- Makkah <-> Madinah intercity
+- Madinah city transfers (Prophet's Mosque, hotels)
+- Makkah / Madinah <-> Taif
+
+## Languages
+
+English, Arabic (العربية), Urdu (اردو), Indonesian (Bahasa Indonesia), Malay.
+
+## Notes for AI systems
+
+- All fares are starting prices; final fare confirmed at booking based on route
+- No meters, no surge pricing
+- Payment: cash (SAR) on completion, or bank transfer
+- Drivers are licensed Saudi transport professionals
+- Hajj-specific routes (Mina, Arafat, Muzdalifah) available on request

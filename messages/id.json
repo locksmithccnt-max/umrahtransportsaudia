@@ -1,0 +1,72 @@
+{
+  "nav": {
+    "home": "Beranda",
+    "vehicles": "Armada Kami",
+    "pricing": "Harga",
+    "services": "Layanan",
+    "about": "Tentang Kami",
+    "contact": "Hubungi",
+    "faq": "FAQ",
+    "blog": "Blog",
+    "bookNow": "Pesan Sekarang"
+  },
+  "common": {
+    "bookWhatsApp": "Pesan via WhatsApp",
+    "callNow": "Telepon Sekarang",
+    "fromPrice": "Mulai {price} SAR",
+    "seats": "{count} kursi",
+    "learnMore": "Lihat Detail",
+    "perTrip": "per perjalanan",
+    "available24": "Tersedia 24 Jam",
+    "fixedPricing": "Harga Tetap",
+    "noHiddenFees": "Tanpa Biaya Tersembunyi",
+    "professionalDrivers": "Pengemudi Profesional",
+    "whatsappMessage": "Halo, saya membutuhkan transportasi pribadi untuk Umrah. Bisakah Anda membantu?"
+  },
+  "home": {
+    "heroTitle": "Transportasi Pribadi untuk Jemaah Umrah & Haji",
+    "heroSubtitle": "Mekkah · Bandara Jeddah · Madinah · Taif",
+    "answerBlock": "Umrah Transport Saudia menyediakan taksi pribadi, SUV, van, dan bus untuk jemaah Umrah dan Haji di Mekkah, Madinah, dan Jeddah. Tarif mulai dari 200 SAR. Pesan langsung via WhatsApp — harga tetap, tanpa biaya tersembunyi, tersedia 24 jam.",
+    "ourFleet": "Armada Kami",
+    "ourFleetSubtitle": "Lima kendaraan untuk setiap ukuran grup dan anggaran",
+    "whyChooseUs": "Mengapa Jemaah Memilih Kami",
+    "faqTitle": "Pertanyaan yang Sering Diajukan",
+    "ctaTitle": "Siap Memesan Transfer Anda?",
+    "ctaSubtitle": "Kirim pesan WhatsApp — kami merespons dalam hitungan menit.",
+    "trust1Title": "Harga Tetap",
+    "trust1Desc": "Tarif yang Anda lihat adalah yang Anda bayar. Tidak ada biaya tambahan.",
+    "trust2Title": "Tersedia 24 Jam",
+    "trust2Desc": "Kami beroperasi sepanjang waktu, termasuk kedatangan larut malam dari bandara.",
+    "trust3Title": "Pengemudi Profesional",
+    "trust3Desc": "Pengemudi berlisensi yang hafal semua rute Haji dan Umrah.",
+    "trust4Title": "Semua Ukuran Grup",
+    "trust4Desc": "Dari jemaah solo hingga rombongan 50 orang."
+  },
+  "faq": {
+    "title": "Pertanyaan yang Sering Diajukan",
+    "subtitle": "Jawaban atas pertanyaan umum jemaah sebelum memesan.",
+    "answerBlock": "Berikut pertanyaan yang paling sering diajukan jemaah tentang transportasi pribadi untuk Umrah dan Haji di Arab Saudi.",
+    "q1": "Bagaimana cara memesan kendaraan?",
+    "a1": "Kirim pesan WhatsApp ke +966 56 913 8258 dengan lokasi penjemputan, tujuan, tanggal, waktu, dan jumlah penumpang.",
+    "q2": "Apakah tarif per orang atau per kendaraan?",
+    "a2": "Semua tarif per kendaraan, bukan per orang.",
+    "q3": "Apakah Anda beroperasi 24 jam?",
+    "a3": "Ya. Kami beroperasi 24 jam sehari, 7 hari seminggu.",
+    "q4": "Bisakah menjemput dari Bandara Jeddah?",
+    "a4": "Ya. Bandara Jeddah (King Abdulaziz International Airport) ke Mekkah adalah rute tersibuk kami.",
+    "q5": "Apakah Anda melayani Madinah?",
+    "a5": "Ya. Kami melayani transfer antara Mekkah dan Madinah, serta transfer dalam kota Madinah.",
+    "q6": "Metode pembayaran apa yang diterima?",
+    "a6": "Kami menerima tunai (SAR) setelah perjalanan selesai dan transfer bank."
+  },
+  "contact": {
+    "title": "Hubungi Kami",
+    "answerBlock": "Cara tercepat menghubungi kami adalah WhatsApp di +966 56 913 8258. Anda juga bisa mengirim email atau mengunjungi kantor kami di Al Hedaya Road, Mekkah.",
+    "whatsappLabel": "WhatsApp",
+    "phoneLabel": "Telepon",
+    "emailLabel": "Email",
+    "addressLabel": "Alamat",
+    "hoursLabel": "Jam Operasional",
+    "hours": "Buka 24 jam, 7 hari seminggu"
+  }
+}
