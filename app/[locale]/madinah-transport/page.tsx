@@ -4,14 +4,19 @@ import { faqSchema, breadcrumbSchema } from '@/lib/schema';
 import JsonLd from '@/components/schema/JsonLd';
 import BreadcrumbNav from '@/components/ui/BreadcrumbNav';
 import FareTable from '@/components/ui/FareTable';
-
-export const metadata: Metadata = {
-  title: 'Madinah Transport — Private Transfer Makkah to Madinah & City Transfers',
-  description:
-    'Private transport between Makkah and Madinah, and city transfers in Madinah including Masjid an-Nabawi. Fixed fares, licensed drivers. Book via WhatsApp.',
-};
+import { generateLocaleAlternates } from '@/lib/metadata';
 
 type Props = { params: Promise<{ locale: string }> };
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { locale } = await params;
+  return {
+    title: 'Madinah Transport — Private Transfer Makkah to Madinah & City Transfers',
+    description:
+      'Private transport between Makkah and Madinah, and city transfers in Madinah including Masjid an-Nabawi. Fixed fares, licensed drivers. Book via WhatsApp.',
+    alternates: generateLocaleAlternates('/madinah-transport', locale),
+  };
+}
 
 const faqs = [
   {

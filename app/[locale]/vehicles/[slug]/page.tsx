@@ -6,6 +6,7 @@ import { vehicleProductSchema, faqSchema } from '@/lib/schema';
 import JsonLd from '@/components/schema/JsonLd';
 import BreadcrumbNav from '@/components/ui/BreadcrumbNav';
 import FareTable from '@/components/ui/FareTable';
+import { generateLocaleAlternates } from '@/lib/metadata';
 
 type Props = { params: Promise<{ locale: string; slug: string }> };
 
@@ -14,12 +15,13 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { slug } = await params;
+  const { locale, slug } = await params;
   const vehicle = getVehicleBySlug(slug);
   if (!vehicle) return {};
   return {
     title: `${vehicle.name} — ${vehicle.seats}-Seat ${vehicle.type} · Umrah Transport`,
     description: `Book the ${vehicle.name} for private Umrah and Hajj transport in Makkah and Jeddah. ${vehicle.seats} seats. From ${vehicle.priceFrom} SAR per trip.`,
+    alternates: generateLocaleAlternates(`/vehicles/${slug}`, locale),
   };
 }
 

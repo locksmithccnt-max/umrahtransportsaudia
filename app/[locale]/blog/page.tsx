@@ -4,14 +4,19 @@ import { breadcrumbSchema } from '@/lib/schema';
 import JsonLd from '@/components/schema/JsonLd';
 import BreadcrumbNav from '@/components/ui/BreadcrumbNav';
 import { whatsappLink } from '@/lib/constants';
-
-export const metadata: Metadata = {
-  title: 'Blog — Umrah & Hajj Travel Guides for Pilgrims',
-  description:
-    'Practical guides for Umrah and Hajj pilgrims: airport transfers, packing advice, Makkah transport, Madinah visits, and more.',
-};
+import { generateLocaleAlternates } from '@/lib/metadata';
 
 type Props = { params: Promise<{ locale: string }> };
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { locale } = await params;
+  return {
+    title: 'Blog — Umrah & Hajj Travel Guides for Pilgrims',
+    description:
+      'Practical guides for Umrah and Hajj pilgrims: airport transfers, packing advice, Makkah transport, Madinah visits, and more.',
+    alternates: generateLocaleAlternates('/blog', locale),
+  };
+}
 
 const placeholderPosts = [
   {

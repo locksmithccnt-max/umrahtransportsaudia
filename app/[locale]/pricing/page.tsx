@@ -4,14 +4,19 @@ import { faqSchema, breadcrumbSchema } from '@/lib/schema';
 import { vehicles } from '@/lib/vehicles';
 import JsonLd from '@/components/schema/JsonLd';
 import BreadcrumbNav from '@/components/ui/BreadcrumbNav';
-
-export const metadata: Metadata = {
-  title: 'Pricing — Private Umrah Transport Fares in Saudi Arabia',
-  description:
-    'Transparent, fixed fares for private Umrah and Hajj transport in Saudi Arabia. Toyota Camry from 200 SAR, Hiace from 250 SAR, King Long Bus from 300 SAR. Per vehicle, not per person.',
-};
+import { generateLocaleAlternates } from '@/lib/metadata';
 
 type Props = { params: Promise<{ locale: string }> };
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { locale } = await params;
+  return {
+    title: 'Pricing — Private Umrah Transport Fares in Saudi Arabia',
+    description:
+      'Transparent, fixed fares for private Umrah and Hajj transport in Saudi Arabia. Toyota Camry from 200 SAR, Hiace from 250 SAR, King Long Bus from 300 SAR. Per vehicle, not per person.',
+    alternates: generateLocaleAlternates('/pricing', locale),
+  };
+}
 
 const pricingFaqs = [
   {

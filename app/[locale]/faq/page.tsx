@@ -3,14 +3,19 @@ import { whatsappLink } from '@/lib/constants';
 import { faqSchema, breadcrumbSchema } from '@/lib/schema';
 import JsonLd from '@/components/schema/JsonLd';
 import BreadcrumbNav from '@/components/ui/BreadcrumbNav';
-
-export const metadata: Metadata = {
-  title: 'FAQ — Umrah & Hajj Transport Questions Answered',
-  description:
-    'Answers to common questions about private Umrah and Hajj transport in Saudi Arabia: booking, pricing, vehicles, routes, and payment.',
-};
+import { generateLocaleAlternates } from '@/lib/metadata';
 
 type Props = { params: Promise<{ locale: string }> };
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { locale } = await params;
+  return {
+    title: 'FAQ — Umrah & Hajj Transport Questions Answered',
+    description:
+      'Answers to common questions about private Umrah and Hajj transport in Saudi Arabia: booking, pricing, vehicles, routes, and payment.',
+    alternates: generateLocaleAlternates('/faq', locale),
+  };
+}
 
 const allFaqs = [
   {

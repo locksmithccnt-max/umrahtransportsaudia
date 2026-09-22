@@ -4,14 +4,19 @@ import { faqSchema, breadcrumbSchema } from '@/lib/schema';
 import JsonLd from '@/components/schema/JsonLd';
 import BreadcrumbNav from '@/components/ui/BreadcrumbNav';
 import FareTable from '@/components/ui/FareTable';
-
-export const metadata: Metadata = {
-  title: 'Hajj Transport Services — Private Transfers Mina, Arafat, Muzdalifah',
-  description:
-    'Private Hajj transport in Saudi Arabia. Transfers between Makkah, Mina, Arafat, and Muzdalifah. Coaches and SUVs for groups of all sizes. Book via WhatsApp.',
-};
+import { generateLocaleAlternates } from '@/lib/metadata';
 
 type Props = { params: Promise<{ locale: string }> };
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { locale } = await params;
+  return {
+    title: 'Hajj Transport Services — Private Transfers Mina, Arafat, Muzdalifah',
+    description:
+      'Private Hajj transport in Saudi Arabia. Transfers between Makkah, Mina, Arafat, and Muzdalifah. Coaches and SUVs for groups of all sizes. Book via WhatsApp.',
+    alternates: generateLocaleAlternates('/hajj-transport-services', locale),
+  };
+}
 
 const faqs = [
   {

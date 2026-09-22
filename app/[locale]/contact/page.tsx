@@ -3,14 +3,19 @@ import { whatsappLink, PHONE_NUMBER, EMAIL, ADDRESS } from '@/lib/constants';
 import { breadcrumbSchema } from '@/lib/schema';
 import JsonLd from '@/components/schema/JsonLd';
 import BreadcrumbNav from '@/components/ui/BreadcrumbNav';
-
-export const metadata: Metadata = {
-  title: 'Contact Umrah Transport Saudia — WhatsApp & Phone',
-  description:
-    'Contact Umrah Transport Saudia via WhatsApp at +966 56 913 8258. Book private transport for Umrah and Hajj in Makkah, Jeddah, and Madinah.',
-};
+import { generateLocaleAlternates } from '@/lib/metadata';
 
 type Props = { params: Promise<{ locale: string }> };
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { locale } = await params;
+  return {
+    title: 'Contact Umrah Transport Saudia — WhatsApp & Phone',
+    description:
+      'Contact Umrah Transport Saudia via WhatsApp at +966 56 913 8258. Book private transport for Umrah and Hajj in Makkah, Jeddah, and Madinah.',
+    alternates: generateLocaleAlternates('/contact', locale),
+  };
+}
 
 export default async function ContactPage({ params }: Props) {
   const { locale } = await params;

@@ -6,14 +6,19 @@ import FareTable from '@/components/ui/FareTable';
 import BreadcrumbNav from '@/components/ui/BreadcrumbNav';
 import JsonLd from '@/components/schema/JsonLd';
 import { faqSchema } from '@/lib/schema';
+import { generateLocaleAlternates } from '@/lib/metadata';
 
 type Props = { params: Promise<{ locale: string }> };
 
-export const metadata: Metadata = {
-  title: 'Our Fleet — Private Vehicles for Umrah & Hajj Pilgrims',
-  description:
-    'Choose from 5 vehicles: Toyota Camry (4 seats), Hyundai Staria (7 seats), GMC Yukon XL (7 seats), Toyota Hiace (13 seats), King Long Bus (50 seats). Fares from 200 SAR.',
-};
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { locale } = await params;
+  return {
+    title: 'Our Fleet — Private Vehicles for Umrah & Hajj Pilgrims',
+    description:
+      'Choose from 5 vehicles: Toyota Camry (4 seats), Hyundai Staria (7 seats), GMC Yukon XL (7 seats), Toyota Hiace (13 seats), King Long Bus (50 seats). Fares from 200 SAR.',
+    alternates: generateLocaleAlternates('/vehicles', locale),
+  };
+}
 
 const vehicleFaqs = [
   {

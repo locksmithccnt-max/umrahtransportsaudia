@@ -4,14 +4,19 @@ import { faqSchema, breadcrumbSchema } from '@/lib/schema';
 import JsonLd from '@/components/schema/JsonLd';
 import BreadcrumbNav from '@/components/ui/BreadcrumbNav';
 import FareTable from '@/components/ui/FareTable';
-
-export const metadata: Metadata = {
-  title: 'Group Transport for Umrah & Hajj — Vans & Coaches for Pilgrim Groups',
-  description:
-    'Group transport for Umrah and Hajj delegations in Saudi Arabia. 13-seat vans and 50-seat coaches. Fixed fares, licensed drivers, multi-day programmes. Book via WhatsApp.',
-};
+import { generateLocaleAlternates } from '@/lib/metadata';
 
 type Props = { params: Promise<{ locale: string }> };
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { locale } = await params;
+  return {
+    title: 'Group Transport for Umrah & Hajj — Vans & Coaches for Pilgrim Groups',
+    description:
+      'Group transport for Umrah and Hajj delegations in Saudi Arabia. 13-seat vans and 50-seat coaches. Fixed fares, licensed drivers, multi-day programmes. Book via WhatsApp.',
+    alternates: generateLocaleAlternates('/group-transport', locale),
+  };
+}
 
 const faqs = [
   {

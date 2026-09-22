@@ -4,14 +4,19 @@ import { whatsappLink, PHONE_NUMBER, EMAIL, ADDRESS } from '@/lib/constants';
 import { breadcrumbSchema } from '@/lib/schema';
 import JsonLd from '@/components/schema/JsonLd';
 import BreadcrumbNav from '@/components/ui/BreadcrumbNav';
-
-export const metadata: Metadata = {
-  title: 'About Umrah Transport Saudia — Private Pilgrim Transport in Makkah',
-  description:
-    'Umrah Transport Saudia is a Makkah-based private transport company for Umrah and Hajj pilgrims. Fixed fares, professional drivers, 24/7 availability.',
-};
+import { generateLocaleAlternates } from '@/lib/metadata';
 
 type Props = { params: Promise<{ locale: string }> };
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { locale } = await params;
+  return {
+    title: 'About Umrah Transport Saudia — Private Pilgrim Transport in Makkah',
+    description:
+      'Umrah Transport Saudia is a Makkah-based private transport company for Umrah and Hajj pilgrims. Fixed fares, professional drivers, 24/7 availability.',
+    alternates: generateLocaleAlternates('/about', locale),
+  };
+}
 
 export default async function AboutPage({ params }: Props) {
   const { locale } = await params;

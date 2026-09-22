@@ -62,16 +62,7 @@ export const metadata: Metadata = {
   verification: {
     google: '8WDp6XqSEWcHB6KuSEuCzCwV-6fGfroYg7heDWUNB5o',
   },
-  alternates: {
-    canonical: 'https://umrahtransportsaudia.com',
-    languages: {
-      'en': 'https://umrahtransportsaudia.com',
-      'ar': 'https://umrahtransportsaudia.com/ar',
-      'ur': 'https://umrahtransportsaudia.com/ur',
-      'id': 'https://umrahtransportsaudia.com/id',
-      'x-default': 'https://umrahtransportsaudia.com',
-    },
-  },
+  // NO canonical here — every page sets its own self-referencing canonical via generateMetadata
 };
 
 export default async function LocaleLayout({ children, params }: Props) {
