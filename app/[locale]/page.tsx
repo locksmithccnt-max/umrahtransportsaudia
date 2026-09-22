@@ -24,7 +24,7 @@ const homeFaqs = [
   {
     question: 'How do I book a vehicle for Umrah transport?',
     answer:
-      'Send a WhatsApp message to +966 56 913 8258 with your pickup location, destination, date, time, and number of passengers. We confirm availability and fare within minutes.',
+      'Send a WhatsApp message to +966 57 306 7785 with your pickup location, destination, date, time, and number of passengers. We confirm availability and fare within minutes.',
   },
   {
     question: 'Are fares per person or per vehicle?',

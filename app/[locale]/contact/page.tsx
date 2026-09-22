@@ -12,7 +12,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: 'Contact Umrah Transport Saudia — WhatsApp & Phone',
     description:
-      'Contact Umrah Transport Saudia via WhatsApp at +966 56 913 8258. Book private transport for Umrah and Hajj in Makkah, Jeddah, and Madinah.',
+      'Contact Umrah Transport Saudia via WhatsApp at +966 57 306 7785. Book private transport for Umrah and Hajj in Makkah, Jeddah, and Madinah.',
     alternates: generateLocaleAlternates('/contact', locale),
   };
 }
@@ -41,7 +41,7 @@ export default async function ContactPage({ params }: Props) {
             Contact Us
           </h1>
           <p className="answer-block">
-            The fastest way to reach Umrah Transport Saudia is via WhatsApp at +966 56 913 8258. We
+            The fastest way to reach Umrah Transport Saudia is via WhatsApp at +966 57 306 7785. We
             respond within minutes, day or night. You can also email us or visit our office in Makkah.
           </p>
         </div>

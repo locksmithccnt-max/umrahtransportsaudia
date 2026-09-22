@@ -21,7 +21,7 @@ const allFaqs = [
   {
     category: 'Booking',
     items: [
-      { question: 'How do I book a vehicle?', answer: 'Send a WhatsApp message to +966 56 913 8258 with your pickup location, destination, date, time, and number of passengers. We confirm availability and fare within minutes.' },
+      { question: 'How do I book a vehicle?', answer: 'Send a WhatsApp message to +966 57 306 7785 with your pickup location, destination, date, time, and number of passengers. We confirm availability and fare within minutes.' },
       { question: 'How far in advance do I need to book?', answer: 'For standard transfers, same-day and next-day bookings are usually available. For Hajj season transport, we strongly recommend booking weeks in advance due to very high demand.' },
       { question: 'Can I change or cancel a booking?', answer: 'Yes. Contact us via WhatsApp as early as possible if you need to change or cancel. We accommodate changes when possible. Cancellation terms for multi-day bookings are confirmed at the time of booking.' },
       { question: 'Do you accept bookings from travel agencies?', answer: 'Yes. We work with travel agencies and tour operators on a wholesale and referral basis. Contact us via WhatsApp or email to discuss arrangements.' },

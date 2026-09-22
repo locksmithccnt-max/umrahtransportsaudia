@@ -1,7 +1,7 @@
 import { Vehicle } from './vehicles';
 
 const SITE_URL = 'https://umrahtransportsaudia.com';
-const PHONE = '+966569138258';
+const PHONE = '+966573067785';
 const EMAIL = 'info@umrahtransportsaudia.com';
 
 export const businessSchema = {

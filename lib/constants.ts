@@ -1,5 +1,5 @@
-export const WHATSAPP_NUMBER = '966569138258';
-export const PHONE_NUMBER = '+966 56 913 8258';
+export const WHATSAPP_NUMBER = '966573067785';
+export const PHONE_NUMBER = '+966 57 306 7785';
 export const EMAIL = 'info@umrahtransportsaudia.com';
 export const ADDRESS = 'Al Hedaya Road, Makkah 24242, Saudi Arabia';
 export const SITE_URL = 'https://umrahtransportsaudia.com';

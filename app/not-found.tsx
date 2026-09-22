@@ -41,7 +41,7 @@ export default function RootNotFound() {
               Go Home
             </a>
             <a
-              href="https://wa.me/966569138258?text=Hello%2C%20I%20need%20help%20with%20Umrah%20transport."
+              href="https://wa.me/966573067785?text=Hello%2C%20I%20need%20help%20with%20Umrah%20transport."
               target="_blank"
               rel="noopener noreferrer"
               style={{
